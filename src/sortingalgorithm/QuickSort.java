@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * 快速排序:通过一趟排序将待排记录分隔成独立的两部分，
  * 其中一部分记录的关键字均比另一部分的关键字小，则可分别对这两部分记录继续进行排序，以达到整个序列有序
+ * 时间复杂度和递归程度有关，最优递归logn次，即为O(nlogn)；最差递归n次，即为O(n^2)。
  */
 public class QuickSort {
     public static void quickSort(int[] arr, int left, int right) {
